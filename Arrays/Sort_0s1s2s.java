@@ -9,12 +9,15 @@ class Sort {
         System.out.println("Enter the numbers :");
         for(int i = 0; i < n; i++)
             ar[i] = sc.nextInt();
-        int result[] = sort(ar);
+        int result[] = sort(ar, n);
 
         for(int i : result)
             System.out.print(i+" ");
     }
-    public static int[] sort(int ar[]){
+    public static int[] sort(int ar[], int n){
+
+        if(ar == null)
+            return null;
         int low = 0;
         int mid = 0;
         int heigh = ar.length - 1;
