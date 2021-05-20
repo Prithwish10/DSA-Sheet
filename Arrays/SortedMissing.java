@@ -29,6 +29,9 @@ class SortedMissing {
         int result = findMissingNumber(ar, n);
         System.out.println(result);
     }
+    
+    //Time Complexity: O(log N)
+    //Space Complexity: O(1)
     public static int findMissingNumber(int ar[], int n){
 
         int low = 0;
